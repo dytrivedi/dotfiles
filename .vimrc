@@ -35,7 +35,8 @@ Bundle 'tpope/vim-surround'
 Bundle 'myusuf3/numbers.vim'
 Bundle 'lukaszkorecki/workflowish'
 Bundle 'pangloss/vim-javascript'
-Bundle 'mattn/zencoding-vim'
+"Bundle 'mattn/zencoding-vim'
+Bundle 'mattn/emmet-vim'
 "Themes
 Bundle 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
 Bundle 'sjl/badwolf'
@@ -59,11 +60,11 @@ colorscheme Tomorrow-Night
 let g:zenburn_force_dark_Background=1
 let g:solarized_termcolors=256
 set guifont=Inconsolata:h14
-let g:user_zen_settings = {
-\ 'indentation':'    ',
-\}
-let g:user_zen_expandabbr_key='<c-e>'
-let g:user_zen_complete_tag = 1
+"let g:user_zen_settings = {
+"\ 'indentation':'    ',
+"\}
+"let g:user_zen_expandabbr_key='<c-e>'
+"et g:user_zen_complete_tag = 1
 
 if has('cmdline_info')
     set ruler

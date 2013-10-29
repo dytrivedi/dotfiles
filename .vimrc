@@ -19,12 +19,14 @@ set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
 filetype off "Required for Vundle
 set rtp+=~/.vim/vundle/
 call vundle#rc()
+"let $GIT_SSL_NO_VERIFY = 'true' "required in case of some RHEL boxes
 
 "Bundles
 "Git Repos
 Bundle 'gmarik/vundle'
 Bundle 'kien/ctrlp.vim'
 "Bundle 'wincent/Command-T'
+Bundle 'Lokaltog/vim-easymotion'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
@@ -37,14 +39,22 @@ Bundle 'lukaszkorecki/workflowish'
 Bundle 'pangloss/vim-javascript'
 "Bundle 'mattn/zencoding-vim'
 Bundle 'mattn/emmet-vim'
+Bundle 'tpope/vim-fugitive'
+Bundle 'kien/rainbow_parentheses.vim'
+Bundle 'airblade/vim-gitgutter'
+Bundle 'sleistner/vim-jshint'
+Bundle 'scrooloose/syntastic'
+"Bundle 'hallettj/jslint.vim'
 "Themes
 Bundle 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
 Bundle 'sjl/badwolf'
 Bundle 'tomasr/molokai'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'jnurmine/Zenburn'
+Bundle 'cschlueter/vim-wombat'
 "Vim Scripts
 Bundle 'bufexplorer.zip'
+Bundle 'matchit.zip'
 "Non Github Repos
 Bundle 'git://git.wincent.com/command-t.git'
 
@@ -52,19 +62,21 @@ filetype plugin indent on "Required for Vundle
 
 nmap <leader>l :set list!<CR>
 nnoremap <silent> <leader>tt :TagbarToggle<CR>
+nmap <c-b> :CtrlPBuffer<CR>
 set ls=2
 set backspace=indent,eol,start
 set vb t_vb=
 syntax on
-colorscheme Tomorrow-Night
-let g:zenburn_force_dark_Background=1
-let g:solarized_termcolors=256
+set background=light
+colorscheme Tomorrow 
+"let g:zenburn_force_dark_Background=1
+"let g:solarized_termcolors=256
 set guifont=Inconsolata:h14
 "let g:user_zen_settings = {
 "\ 'indentation':'    ',
 "\}
 "let g:user_zen_expandabbr_key='<c-e>'
-"et g:user_zen_complete_tag = 1
+"let g:user_zen_complete_tag = 1
 
 if has('cmdline_info')
     set ruler
@@ -81,4 +93,4 @@ if has('statusline')
 endif
 set showmode
 set cursorline
-" set colorcolumn=85
+"set colorcolumn=85

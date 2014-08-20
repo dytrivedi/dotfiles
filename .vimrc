@@ -27,14 +27,20 @@ filetype off "Required for Vundle
 set rtp+=~/.vim/vundle/
 call vundle#rc()
 "let $GIT_SSL_NO_VERIFY = 'true' "required in case of some RHEL boxes
-
+ let g:airline_left_sep = ''
+ let g:airline_left_alt_sep = ''
+ let g:airline_right_sep = ''
+ let g:airline_right_alt_sep = ''
+ let g:airline_theme = 'powerlineish'
+ 
 "Bundles
 "Git Repos
 Bundle 'gmarik/vundle'
 Bundle 'kien/ctrlp.vim'
 "Bundle 'wincent/Command-T'
 Bundle 'Lokaltog/vim-easymotion'
-Bundle 'Lokaltog/vim-powerline'
+"Bundle 'Lokaltog/vim-powerline'
+Bundle 'bling/vim-airline'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'godlygeek/tabular'

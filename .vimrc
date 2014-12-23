@@ -57,6 +57,7 @@ Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'sleistner/vim-jshint'
 Bundle 'scrooloose/syntastic'
+Bundle 'luochen1990/rainbow'
 "Bundle 'hallettj/jslint.vim'
 "Themes
 Bundle 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
@@ -90,6 +91,7 @@ set guifont=Inconsolata:h14
 "\}
 "let g:user_zen_expandabbr_key='<c-e>'
 "let g:user_zen_complete_tag = 1
+let g:rainbow_active = 1
 
 if has('cmdline_info')
     set ruler

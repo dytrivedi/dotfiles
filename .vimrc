@@ -25,7 +25,7 @@ endif
 "Vundle Stuff
 filetype off "Required for Vundle
 set rtp+=~/.vim/vundle/
-call vundle#rc()
+call vundle#begin()
 "let $GIT_SSL_NO_VERIFY = 'true' "required in case of some RHEL boxes
  let g:airline_left_sep = ''
  let g:airline_left_alt_sep = ''
@@ -33,46 +33,49 @@ call vundle#rc()
  let g:airline_right_alt_sep = ''
  let g:airline_theme = 'powerlineish'
  
-"Bundles
+"Vundle Plugins
 "Git Repos
-Bundle 'gmarik/vundle'
-Bundle 'kien/ctrlp.vim'
-"Bundle 'wincent/Command-T'
-Bundle 'Lokaltog/vim-easymotion'
-"Bundle 'Lokaltog/vim-powerline'
-Bundle 'bling/vim-airline'
-Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'godlygeek/tabular'
-Bundle 'Raimondi/delimitMate'
-Bundle 'majutsushi/tagbar'
-Bundle 'tpope/vim-surround'
-Bundle 'myusuf3/numbers.vim'
-Bundle 'lukaszkorecki/workflowish'
-Bundle 'pangloss/vim-javascript'
-"Bundle 'mattn/zencoding-vim'
-Bundle 'mattn/emmet-vim'
-Bundle 'tpope/vim-fugitive'
-Bundle 'kien/rainbow_parentheses.vim'
-Bundle 'airblade/vim-gitgutter'
-Bundle 'sleistner/vim-jshint'
-Bundle 'scrooloose/syntastic'
-Bundle 'luochen1990/rainbow'
-"Bundle 'hallettj/jslint.vim'
+Plugin 'gmarik/vundle'
+Plugin 'kien/ctrlp.vim'
+"Plugin 'wincent/Command-T'
+Plugin 'Lokaltog/vim-easymotion'
+"Plugin 'Lokaltog/vim-powerline'
+Plugin 'bling/vim-airline'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'godlygeek/tabular'
+Plugin 'Raimondi/delimitMate'
+Plugin 'majutsushi/tagbar'
+Plugin 'tpope/vim-surround'
+Plugin 'myusuf3/numbers.vim'
+Plugin 'lukaszkorecki/workflowish'
+Plugin 'pangloss/vim-javascript'
+"Plugin 'mattn/zencoding-vim'
+Plugin 'mattn/emmet-vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'sleistner/vim-jshint'
+Plugin 'scrooloose/syntastic'
+Plugin 'luochen1990/rainbow'
+"Plugin 'hallettj/jslint.vim'
 "Themes
-Bundle 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
-Bundle 'sjl/badwolf'
-Bundle 'tomasr/molokai'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'jnurmine/Zenburn'
-Bundle 'cschlueter/vim-wombat'
+Plugin 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
+Plugin 'sjl/badwolf'
+Plugin 'tomasr/molokai'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'jnurmine/Zenburn'
+Plugin 'cschlueter/vim-wombat'
 "Vim Scripts
-Bundle 'bufexplorer.zip'
-Bundle 'matchit.zip'
+Plugin 'bufexplorer.zip'
+Plugin 'matchit.zip'
 "Non Github Repos
-Bundle 'git://git.wincent.com/command-t.git'
+Plugin 'git://git.wincent.com/command-t.git'
 
-filetype plugin indent on "Required for Vundle
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+
 
 nmap <leader>l :set list!<CR>
 nnoremap <silent> <leader>tt :TagbarToggle<CR>

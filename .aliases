@@ -1,2 +1,3 @@
 alias vim="mvim -v"
 alias grep='GREP_COLOR="1;37;45" LANG=C grep --color=auto'
+alias emacs="/usr/local/Cellar/emacs/24.5/Emacs.app/Contents/MacOS/Emacs -nw"

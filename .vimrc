@@ -27,11 +27,8 @@ filetype off "Required for Vundle
 set rtp+=~/.vim/vundle/
 call vundle#begin()
 "let $GIT_SSL_NO_VERIFY = 'true' "required in case of some RHEL boxes
-let g:airline_left_sep = ''
-let g:airline_left_alt_sep = ''
-let g:airline_right_sep = ''
-let g:airline_right_alt_sep = ''
-let g:airline_theme = 'powerlineish'
+let g:airline_powerline_fonts=1
+let g:airline_theme='gruvbox'
 
 "Vundle Plugins
 "Git Repos
@@ -59,14 +56,11 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'sleistner/vim-jshint'
 Plugin 'scrooloose/syntastic'
 Plugin 'luochen1990/rainbow'
+Plugin 'Yggdroot/indentLine'
 "Plugin 'hallettj/jslint.vim'
 "Themes
+Plugin 'morhetz/gruvbox'
 Plugin 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
-Plugin 'sjl/badwolf'
-Plugin 'tomasr/molokai'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'jnurmine/Zenburn'
-Plugin 'cschlueter/vim-wombat'
 "Vim Scripts
 Plugin 'bufexplorer.zip'
 Plugin 'matchit.zip'
@@ -77,7 +71,6 @@ Plugin 'git://git.wincent.com/command-t.git'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-
 nmap <leader>l :set list!<CR>
 nnoremap <silent> <leader>tt :TagbarToggle<CR>
 nmap <c-b> :CtrlPBuffer<CR>
@@ -85,16 +78,22 @@ set ls=2
 set backspace=indent,eol,start
 set vb t_vb=
 syntax on
+
 set background=light
-colorscheme Tomorrow 
-"let g:zenburn_force_dark_Background=1
-"let g:solarized_termcolors=256
-set guifont=Inconsolata:h14
+colorscheme gruvbox
+let g:gruvbox_contrast_light='soft'
+set guifont=Inconsolata\ for\ Powerline:h16
+
 "let g:user_zen_settings = {
 "\ 'indentation':'    ',
 "\}
 "let g:user_zen_expandabbr_key='<c-e>'
 "let g:user_zen_complete_tag = 1
+
+let g:indentLine_leadingSpaceEnabled=1
+let g:indentLine_char="│"
+let g:indentLine_leadingSpaceChar='·'
+
 let g:rainbow_active = 1
 
 if has('cmdline_info')

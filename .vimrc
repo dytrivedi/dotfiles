@@ -48,7 +48,6 @@ Plugin 'tpope/vim-surround'
 Plugin 'myusuf3/numbers.vim'
 Plugin 'lukaszkorecki/workflowish'
 Plugin 'pangloss/vim-javascript'
-"Plugin 'mattn/zencoding-vim'
 Plugin 'mattn/emmet-vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'kien/rainbow_parentheses.vim'
@@ -83,12 +82,6 @@ set background=light
 colorscheme gruvbox
 let g:gruvbox_contrast_light='soft'
 set guifont=Inconsolata\ for\ Powerline:h16
-
-"let g:user_zen_settings = {
-"\ 'indentation':'    ',
-"\}
-"let g:user_zen_expandabbr_key='<c-e>'
-"let g:user_zen_complete_tag = 1
 
 let g:indentLine_leadingSpaceEnabled=1
 let g:indentLine_char="│"

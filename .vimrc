@@ -102,12 +102,12 @@ if has('cmdline_info')
     set showcmd
 endif
 if has('statusline')
-        set laststatus=2
-        set statusline=%<%f\
-        set statusline+=%w%h%m%r
-        set statusline+=\ [%{&ff}/%Y]
-        set statusline+=\ [%{getcwd()}]
-        set statusline+=%=%-14.(%l,%c%V%)\ %p%%
+    set laststatus=2
+    set statusline=%<%f\
+    set statusline+=%w%h%m%r
+    set statusline+=\ [%{&ff}/%Y]
+    set statusline+=\ [%{getcwd()}]
+    set statusline+=%=%-14.(%l,%c%V%)\ %p%%
 endif
 set showmode
 set cursorline

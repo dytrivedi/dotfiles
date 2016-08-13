@@ -27,12 +27,12 @@ filetype off "Required for Vundle
 set rtp+=~/.vim/vundle/
 call vundle#begin()
 "let $GIT_SSL_NO_VERIFY = 'true' "required in case of some RHEL boxes
- let g:airline_left_sep = ''
- let g:airline_left_alt_sep = ''
- let g:airline_right_sep = ''
- let g:airline_right_alt_sep = ''
- let g:airline_theme = 'powerlineish'
- 
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+let g:airline_theme = 'powerlineish'
+
 "Vundle Plugins
 "Git Repos
 Plugin 'gmarik/vundle'

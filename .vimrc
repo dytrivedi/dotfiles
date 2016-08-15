@@ -79,6 +79,7 @@ syntax on
 
 let mapleader=','
 nmap <leader>l :set list!<CR>
+nnoremap <silent> <CR> :noh<CR><CR>
 nnoremap <silent> <leader>tt :TagbarToggle<CR>
 nnoremap <silent> <leader>il :IndentLinesToggle<CR>:LeadingSpaceToggle<CR>
 nmap <c-b> :CtrlPBuffer<CR>

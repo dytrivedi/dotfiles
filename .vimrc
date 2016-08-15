@@ -80,6 +80,7 @@ syntax on
 let mapleader=','
 nmap <leader>l :set list!<CR>
 nnoremap <silent> <leader>tt :TagbarToggle<CR>
+nnoremap <silent> <leader>il :IndentLinesToggle<CR>:LeadingSpaceToggle<CR>
 nmap <c-b> :CtrlPBuffer<CR>
 nnoremap <Leader>a :Tabularize /
 vnoremap <Leader>a :Tabularize /
@@ -90,9 +91,11 @@ let g:gruvbox_contrast_light='soft'
 set guifont=Inconsolata\ for\ Powerline:h16
 highlight Comment cterm=italic
 
-let g:indentLine_leadingSpaceEnabled=1
 "let g:indentLine_char="│"
+"let g:indentLine_leadingSpaceEnabled=1
+"let g:indentLine_faster=1
 let g:indentLine_leadingSpaceChar='·'
+let g:indentLine_enabled=0
 
 let g:rainbow_active=1
 

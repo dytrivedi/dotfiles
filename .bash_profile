@@ -5,6 +5,7 @@ export LSCOLORS=ExFxCxDxBxegedabagacad
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/local/share/npm/bin:$HOME/bin:$PATH"
 
 source "$HOME/.vim/bundle/gruvbox/gruvbox_256palette.sh"
+archey
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.

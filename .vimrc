@@ -61,6 +61,7 @@ Plugin 'luochen1990/rainbow'
 Plugin 'Yggdroot/indentLine'
 Plugin 'kshenoy/vim-signature'
 Plugin 'valloric/youcompleteme'
+Plugin 'idanarye/vim-smile'
 "Themes
 Plugin 'morhetz/gruvbox'
 Plugin 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}

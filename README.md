@@ -1,4 +1,4 @@
-dotfiles
+dytrivedi's dotfiles
 ========
 
 ###Terminal

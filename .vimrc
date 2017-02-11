@@ -62,6 +62,7 @@ Plugin 'kshenoy/vim-signature'
 Plugin 'valloric/youcompleteme'
 Plugin 'idanarye/vim-smile'
 Plugin 'metakirby5/codi.vim'
+Plugin 'mbbill/undotree'
 "Themes
 Plugin 'morhetz/gruvbox'
 Plugin 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
@@ -86,6 +87,7 @@ nnoremap <silent> <leader>il :IndentLinesToggle<CR>:LeadingSpaceToggle<CR>
 nmap <c-b> :CtrlPBuffer<CR>
 nnoremap <Leader>a :Tabularize /
 vnoremap <Leader>a :Tabularize /
+nnoremap <Leader>u :UndotreeToggle<CR>
 
 set background=light
 colorscheme gruvbox
@@ -100,6 +102,8 @@ let g:indentLine_leadingSpaceChar='·'
 let g:indentLine_enabled=0
 
 let g:rainbow_active=1
+
+let g:undotree_SetFocusWhenToggle=1
 
 if has('cmdline_info')
     set ruler

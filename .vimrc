@@ -38,7 +38,7 @@ let g:airline_theme='gruvbox'
 "Vundle Plugins
 "Git Repos
 Plugin 'gmarik/vundle'
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 "Plugin 'wincent/Command-T'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'vim-airline/vim-airline'

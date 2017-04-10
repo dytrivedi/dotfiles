@@ -92,5 +92,8 @@ set -o vi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 source ~/.aliases
-source "$HOME/.vim/bundle/gruvbox/gruvbox_256palette.sh"
+
+# Solarized for now!
+# source "$HOME/.vim/bundle/gruvbox/gruvbox_256palette.sh"
+
 archey

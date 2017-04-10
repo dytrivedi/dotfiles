@@ -4,7 +4,9 @@ export LSCOLORS=ExFxCxDxBxegedabagacad
 # Add `~/bin` to the `$PATH`
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/local/share/npm/bin:$HOME/bin:$PATH"
 
+# Solarized for now!
 source "$HOME/.vim/bundle/gruvbox/gruvbox_256palette.sh"
+
 archey
 
 # Load the shell dotfiles, and then some:

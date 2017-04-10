@@ -34,7 +34,7 @@ let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#show_splits=0
 "let g:airline_skip_empty_sections=1
 let g:airline_powerline_fonts=1
-let g:airline_theme='gruvbox'
+let g:airline_theme='solarized'
 
 "Vundle Plugins
 "Git Repos
@@ -66,6 +66,7 @@ Plugin 'metakirby5/codi.vim'
 Plugin 'mbbill/undotree'
 "Themes
 Plugin 'morhetz/gruvbox'
+Plugin 'altercation/vim-colors-solarized'
 Plugin 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
 "Vim Scripts
 Plugin 'bufexplorer.zip'
@@ -91,8 +92,8 @@ vnoremap <Leader>a :Tabularize /
 nnoremap <Leader>u :UndotreeToggle<CR>
 
 set background=light
-colorscheme gruvbox
-let g:gruvbox_contrast_light='soft'
+colorscheme solarized
+"let g:gruvbox_contrast_light='soft'
 set guifont=Inconsolata\ for\ Powerline:h16
 highlight Comment cterm=italic
 

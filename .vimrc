@@ -14,6 +14,8 @@ set ignorecase
 set smartcase
 set list
 set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
+"in case we need to use gruvbox without 256 color script
+"set termguicolors
 
 if &term =~ '256color'
     " disable Background Color Erase (BCE) so that color schemes

@@ -36,6 +36,7 @@ let g:airline#extensions#tabline#show_buffers=0
 let g:airline#extensions#tabline#show_splits=0
 "let g:airline_skip_empty_sections=1
 let g:airline_powerline_fonts=1
+let g:airline#extensions#tmuxline#enabled=0
 "Not needed if colorscheme is also solarized
 "let g:airline_theme='solarized'
 
@@ -67,6 +68,7 @@ Plugin 'valloric/youcompleteme'
 Plugin 'idanarye/vim-smile'
 Plugin 'metakirby5/codi.vim'
 Plugin 'mbbill/undotree'
+Plugin 'edkolev/tmuxline.vim'
 "Themes
 Plugin 'morhetz/gruvbox'
 Plugin 'altercation/vim-colors-solarized'

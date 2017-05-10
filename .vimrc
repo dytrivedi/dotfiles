@@ -40,6 +40,12 @@ let g:airline#extensions#tmuxline#enabled=0
 "Not needed if colorscheme is also solarized
 "let g:airline_theme='solarized'
 
+"Good syntastic defaults
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
 "Vundle Plugins
 "Git Repos
 Plugin 'gmarik/vundle'

@@ -46,6 +46,11 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+"Use ag if available, required in case of some RHEL boxes
+"if executable('ag')
+  "let g:ackprg = 'ag --vimgrep'
+"endif
+
 "Vundle Plugins
 "Git Repos
 Plugin 'gmarik/vundle'
@@ -75,6 +80,7 @@ Plugin 'idanarye/vim-smile'
 Plugin 'metakirby5/codi.vim'
 Plugin 'mbbill/undotree'
 Plugin 'edkolev/tmuxline.vim'
+Plugin 'mileszs/ack.vim'
 "Themes
 Plugin 'morhetz/gruvbox'
 Plugin 'altercation/vim-colors-solarized'

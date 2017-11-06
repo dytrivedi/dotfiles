@@ -30,6 +30,9 @@ set rtp+=~/.vim/vundle/
 call vundle#begin()
 "let $GIT_SSL_NO_VERIFY='true' "required in case of some RHEL boxes
 
+"FZF Homebrew RTP
+set rtp+=/usr/local/opt/fzf
+
 let g:airline#extensions#tabline#enabled=1
 "let g:airline#extensions#tabline#show_tabs=0
 let g:airline#extensions#tabline#show_buffers=0
@@ -81,6 +84,7 @@ Plugin 'metakirby5/codi.vim'
 Plugin 'mbbill/undotree'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'mileszs/ack.vim'
+Plugin 'junegunn/fzf.vim'
 "Themes
 Plugin 'morhetz/gruvbox'
 Plugin 'altercation/vim-colors-solarized'

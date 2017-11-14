@@ -54,6 +54,9 @@ let g:syntastic_check_on_wq = 0
   "let g:ackprg = 'ag --vimgrep'
 "endif
 
+"Ignore node_modules etc. in CtrlP
+let g:ctrlp_custom_ignore = '\v[\/](node_modules)|(\.(swp|git))$'
+
 "Vundle Plugins
 "Git Repos
 Plugin 'gmarik/vundle'

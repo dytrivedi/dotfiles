@@ -88,6 +88,8 @@ Plugin 'mbbill/undotree'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'mileszs/ack.vim'
 Plugin 'junegunn/fzf.vim'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'ianks/vim-tsx'
 "Themes
 Plugin 'morhetz/gruvbox'
 Plugin 'altercation/vim-colors-solarized'

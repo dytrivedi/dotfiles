@@ -28,10 +28,13 @@ endif
 filetype off "Required for Vundle
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-"let $GIT_SSL_NO_VERIFY='true' "required in case of some RHEL boxes
+"let $GIT_SSL_NO_VERIFY='true' "required in case of some linux boxes
 
 "FZF Homebrew RTP
 set rtp+=/usr/local/opt/fzf
+
+"FZF git RTP (required on linux boxes)
+"set rtp+=~/.fzf
 
 let g:airline#extensions#tabline#enabled=1
 "let g:airline#extensions#tabline#show_tabs=0
@@ -49,7 +52,7 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-"Use ag if available, required in case of some RHEL boxes
+"Use ag if available, required in case of some linux boxes
 "if executable('ag')
   "let g:ackprg = 'ag --vimgrep'
 "endif

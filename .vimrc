@@ -26,7 +26,7 @@ endif
 
 "Vundle Stuff
 filetype off "Required for Vundle
-set rtp+=~/.vim/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 "let $GIT_SSL_NO_VERIFY='true' "required in case of some RHEL boxes
 
@@ -59,7 +59,7 @@ let g:ctrlp_custom_ignore = '\v[\/](node_modules)|(\.(swp|git))$'
 
 "Vundle Plugins
 "Git Repos
-Plugin 'gmarik/vundle'
+Plugin 'VundleVim/Vundle.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 "Plugin 'wincent/Command-T'
 Plugin 'Lokaltog/vim-easymotion'

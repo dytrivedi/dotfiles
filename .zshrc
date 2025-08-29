@@ -7,6 +7,9 @@ export ZSH=/Users/trivedid/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="agnoster"
 
+# Needed for WSL
+eval `dircolors ~/.dircolors`
+
 # HIDE Default USER
 DEFAULT_USER=trivedid
 
@@ -90,8 +93,10 @@ set -o vi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
 source ~/.aliases
+
+# Needed for WSL
+alias rmzonefiles="find . -name '*:Zone.Identifier' -type f -delete"
 
 # Solarized for now!
 # source "$HOME/.vim/bundle/gruvbox/gruvbox_256palette.sh"
